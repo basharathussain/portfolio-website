@@ -17,6 +17,22 @@ export default function Experience() {
               <ul className="timeline-points">
                 {e.points.map((p, j) => <li key={j}>{p}</li>)}
               </ul>
+
+              {e.concurrent && e.concurrent.length > 0 && (
+                <div className="concurrent-roles">
+                  <div className="concurrent-label">Concurrent roles</div>
+                  {e.concurrent.map((c, k) => (
+                    <div key={k} className="concurrent-card">
+                      <div className="concurrent-header">
+                        <span className="concurrent-role">{c.role}</span>
+                        <span className="timeline-period">{c.period}</span>
+                      </div>
+                      <div className="timeline-company">{c.company}</div>
+                      <p className="concurrent-desc">{c.desc}</p>
+                    </div>
+                  ))}
+                </div>
+              )}
             </div>
           </div>
         ))}

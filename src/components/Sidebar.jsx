@@ -1,4 +1,5 @@
 import { profile } from '../data/profile'
+import bashPhoto from '../../images/bash.png'
 
 const ICONS = {
   github: (
@@ -39,10 +40,7 @@ export default function Sidebar() {
   return (
     <aside className="sidebar">
       <div className="sidebar-avatar">
-        {photo
-          ? <img src={photo} alt={name} className="avatar-img" />
-          : <div className="avatar-placeholder"><span>{name.charAt(0)}</span></div>
-        }
+        <img src={photo || bashPhoto} alt={name} className="avatar-img" />
       </div>
 
       <h1 className="sidebar-name">{name}</h1>
