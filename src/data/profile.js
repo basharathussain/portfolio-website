@@ -232,6 +232,32 @@ export const profile = {
 
   projects: [
     {
+      name:   'EzTrove — Cross-Channel Dropshipping Site',
+      desc:   'Multi-page marketing site for a UK dropshipping automation product. Six standalone pages (Home, Marketplaces, Fulfillment, Pricing, Blog, Contact), long-form article with sticky TOC, pricing with monthly/annual toggle, and a Home-page companion-tool callout linking to the DiscoveryFX MVP. Three-branch git workflow: main / deployment (localhost) / test (Ubuntu VPS).',
+      tags:   ['Angular 18', 'TypeScript', 'Tailwind CSS', 'nginx', 'Docker', 'GitHub'],
+      image:  null,
+      github: 'https://github.com/basharathussain/EzTrove-website-2026',
+      demo:   'http://109.199.121.116:12090',
+      features: [
+        'Six Angular routes rendered as distinct multi-page navigation, not a single-route SPA',
+        'Long-form article with sticky left-side table of contents and in-page anchor scrolling',
+        'Pricing page with monthly/annual toggle, four tiers, no per-tier feature gates',
+        'Marketplaces page with capability tables for supplier sources and sales channels',
+        'Home-page callout that cross-promotes the DiscoveryFX product-discovery MVP',
+        'Multi-stage Docker build (node:20-alpine → nginx:1.27-alpine) — final image is small and stateless',
+        'One-command deploy script on the VPS — git pull → docker compose up -d --build → smoke-test',
+        'Three-branch git layout so VPS-specific changes (loopback bind, host nginx) stay off main',
+      ],
+      architecture: [
+        { layer: 'Frontend',   detail: 'Angular 18 with standalone components and signals; Tailwind for styling; Inter via Google Fonts' },
+        { layer: 'Build',      detail: 'Angular CLI :application builder; production bundle hashed and gzip-served' },
+        { layer: 'Web server', detail: 'nginx — long-cache for hashed assets, gzip on text, SPA fallback to index.html' },
+        { layer: 'Deployment', detail: 'Docker Compose on Ubuntu VPS (port 12090); host nginx reverse-proxy template included for future SSL' },
+        { layer: 'Source',     detail: 'GitHub origin, three branches (main, deployment, test); VPS pulls test branch on every deploy' },
+      ],
+      screenshots: [],
+    },
+    {
       name:   'AI-RecogniX',
       desc:   'Real-time face recognition system with multi-angle enrollment (Face ID–style), live recognition overlay, and voice alerts. Supports IP camera integration via RTSP tunnel.',
       tags:   ['Python', 'FastAPI', 'ASP.NET Core', 'React', 'dlib', 'PostgreSQL', 'Docker'],
