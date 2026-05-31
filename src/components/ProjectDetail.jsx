@@ -2,10 +2,12 @@ import { useParams, useNavigate } from 'react-router-dom'
 import { profile } from '../data/profile'
 import aiRecognixImg from '../../images/AI-RecogniX.png'
 import desiDhabaImg  from '../../images/desidhabawah.png'
+import eztroveImg    from '../../images/EzTrove.png'
 
 const LOCAL_IMAGES = {
-  'AI-RecogniX':           aiRecognixImg,
-  'Desi Dhaba Restaurant': desiDhabaImg,
+  'EzTrove — Cross-Channel Dropshipping Site': eztroveImg,
+  'AI-RecogniX':                               aiRecognixImg,
+  'Desi Dhaba Restaurant':                     desiDhabaImg,
 }
 
 const GRADIENTS = [

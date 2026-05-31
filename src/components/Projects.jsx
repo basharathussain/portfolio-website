@@ -2,6 +2,7 @@ import { useNavigate } from 'react-router-dom'
 import { profile } from '../data/profile'
 import aiRecognixImg   from '../../images/AI-RecogniX.png'
 import desiDhabaImg    from '../../images/desidhabawah.png'
+import eztroveImg      from '../../images/EzTrove.png'
 
 const GRADIENTS = [
   'linear-gradient(135deg,#7c3aed 0%,#4f46e5 100%)',
@@ -13,8 +14,9 @@ const GRADIENTS = [
 ]
 
 const LOCAL_IMAGES = {
-  'AI-RecogniX':           aiRecognixImg,
-  'Desi Dhaba Restaurant': desiDhabaImg,
+  'EzTrove — Cross-Channel Dropshipping Site': eztroveImg,
+  'AI-RecogniX':                               aiRecognixImg,
+  'Desi Dhaba Restaurant':                     desiDhabaImg,
 }
 
 const GithubIcon = () => (
