@@ -3,6 +3,7 @@ import { profile } from '../data/profile'
 import aiRecognixImg   from '../../images/AI-RecogniX.png'
 import desiDhabaImg    from '../../images/desidhabawah.png'
 import eztroveImg      from '../../images/EzTrove.png'
+import propertyMaintImg from '../../images/AI-powered-residential-property-maintenance-system.png'
 
 const GRADIENTS = [
   'linear-gradient(135deg,#7c3aed 0%,#4f46e5 100%)',
@@ -14,9 +15,10 @@ const GRADIENTS = [
 ]
 
 const LOCAL_IMAGES = {
-  'EzTrove — Cross-Channel Dropshipping Site': eztroveImg,
-  'AI-RecogniX':                               aiRecognixImg,
-  'Desi Dhaba Restaurant':                     desiDhabaImg,
+  'AI-powered Residential Property Maintenance System': propertyMaintImg,
+  'EzTrove — Cross-Channel Dropshipping Site':          eztroveImg,
+  'AI-RecogniX':                                        aiRecognixImg,
+  'Desi Dhaba Restaurant':                              desiDhabaImg,
 }
 
 const GithubIcon = () => (
