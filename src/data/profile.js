@@ -237,7 +237,7 @@ export const profile = {
       tags:   ['Python', 'FastAPI', 'React', 'TypeScript', 'PostgreSQL', 'n8n', 'OpenAI', 'Twilio', 'Docker'],
       image:  null,
       github: null,
-      demo:   null,
+      demo:   'http://109.199.121.116:9320',
       features: [
         'Gmail ingestion → AI triage → contractor dispatch — fully automated email-to-job pipeline via n8n workflows',
         'LLM classifies each ticket as CRITICAL or ROUTINE and tags it with the matching trade (Plumbing, Electrical, HVAC, Locksmith, General)',
